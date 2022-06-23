@@ -1,0 +1,115 @@
+/*main index*/
+.mainIndex{
+    display: grid;
+    grid-template-columns: (2 1fr);
+    grid-template-areas: 
+    "formindex imgZoom"
+    ;
+    .formindex{
+        background-color: $bg2;
+        border-style: groove;
+        grid-area: formindex;
+        margin-right: 500px;
+        margin-left: 200px;
+        .formindextitulo{
+            background-color: $bg;
+            color: $titulos;
+            font-size: larger;
+            margin-right: 300px;
+            margin-bottom: 44px;
+        } 
+    }
+}
+
+
+.imgZoom:hover  {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: 0.5s;
+    &{
+        overflow:hidden;
+        grid-area: imgZoom;
+}
+}
+/* main conocenos*/
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
+
+.imgNosotros{
+    display: flex;
+    justify-content: space-around;
+}
+.imgConocenos {
+    filter: blur(2.5px);
+    &:hover{
+        transition: 0.7s;
+        filter: none;
+    }
+}
+.videoConoc{
+    display: flex;
+    justify-content: center;
+    
+    .videoConocenos{
+        
+        width: 800px;
+        height: 400px;
+    }
+}
+/*main destinos */
+
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
+.imgBlur {
+    filter: blur(2.5px);
+    &:hover{
+        transition: 0.7s;
+        filter: none;
+}
+}
+
+/*main contactanos*/ 
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
+.contenedor-contactanos{
+    display: grid;
+    grid-template-columns: (2 1fr);
+    grid-template-areas: 
+    "formContactanos ubicacion";
+    .formContactanos{
+        background-color: #6D8B74;
+        color: black;
+        border-style: groove;
+        margin-right: 0px;
+        grid-area: formContactanos;
+    
+    }
+    .ubicacion{
+        grid-area: ubicacion;
+    }
+    textarea{
+        resize: none;
+    }
+}
+
+
+
+/*main promociones*/
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
