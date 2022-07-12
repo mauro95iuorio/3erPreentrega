@@ -39,14 +39,18 @@ header {
     background-color: #6D8B74;
     border-style: groove;
     grid-area: formindex;
-    margin-right: 500px;
-    margin-left: 200px; }
+    max-width: 300px; }
     .mainIndex .formindex .formindextitulo {
       background-color: #D0C9C0;
       color: black;
       font-size: larger;
       margin-right: 300px;
       margin-bottom: 44px; }
+
+.imgMain {
+  max-width: 600px; }
+  .imgMain .imgZoom {
+    width: 100%; }
 
 .imgZoom:hover {
   -webkit-transform: scale(1.3);
@@ -68,7 +72,7 @@ header {
   justify-content: space-around; }
 
 .imgConocenos {
-  filter: blur(2.5px); }
+  filter: blur(0px); }
   .imgConocenos:hover {
     transition: 0.7s;
     filter: none; }
@@ -81,6 +85,9 @@ header {
     height: 400px; }
 
 /*main destinos */
+.articulosDestinos {
+  text-align: center; }
+
 .subtitulos {
   background-color: #6D8B74;
   border-style: groove;
@@ -88,7 +95,7 @@ header {
   font-weight: bold; }
 
 .imgBlur {
-  filter: blur(2.5px); }
+  filter: blur(0px); }
   .imgBlur:hover {
     transition: 0.7s;
     filter: none; }
@@ -101,9 +108,8 @@ header {
   font-weight: bold; }
 
 .contenedor-contactanos {
-  display: grid;
-  grid-template-columns: 2 1fr;
-  grid-template-areas: "formContactanos ubicacion"; }
+  display: flex;
+  justify-content: space-evenly; }
   .contenedor-contactanos .formContactanos {
     background-color: #6D8B74;
     color: black;
@@ -121,6 +127,9 @@ header {
   border-style: groove;
   color: black;
   font-weight: bold; }
+
+.sectionPromociones {
+  text-align: center; }
 
 .subtitulos {
   background-color: #6D8B74;
